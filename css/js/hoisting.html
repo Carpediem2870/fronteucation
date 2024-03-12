@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>histing</title>
+</head>
+<body>
+    <script>
+        // ES5에만 있는 문제 (호이스팅)
+        
+        function sum(n1, n2) {
+            // 잘못된 예시 console.log(n1, '+', n2, ':', n1 + n2);
+            console.log(`${n1} + ${n2} =`, n1 + n2);
+        }
+
+        sum(10, 25);
+        
+        console.log('a: ', a);
+        var a = 10;
+        
+        console.log('a: ', b);
+        let b = 10;
+        
+        </script>
+</body>
+</html>
